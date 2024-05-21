@@ -1,10 +1,11 @@
 # ejercicios_basicos
 
 Ejercicios basicos en Flutter.
+
 Relizado por:
-Cristian Tello
-Camila Morales
-Mateo Barriga
+- Cristian Tello
+- Camila Morales
+- Mateo Barriga
 
 ## Getting Started
 

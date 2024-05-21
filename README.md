@@ -1,6 +1,10 @@
 # ejercicios_basicos
 
-A new Flutter project.
+Ejercicios basicos en Flutter.
+Relizado por:
+Cristian Tello
+Camila Morales
+Mateo Barriga
 
 ## Getting Started
 

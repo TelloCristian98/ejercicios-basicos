@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Pages/InputFormPage.dart';
+import 'Pages/CaculadoraViaje.dart'; // Importa tu clase CalculadoraViaje
 
 void main() {
   runApp(MyApp());
@@ -47,7 +48,7 @@ class MainPage extends StatelessWidget {
               'Mateo Barriga',
               style: TextStyle(fontSize: 14.0),
             ),
-            const Spacer(), // Add a spacer to push the button to the center
+            const Spacer(), 
             Center(
               child: ElevatedButton(
                 onPressed: () {
@@ -59,7 +60,21 @@ class MainPage extends StatelessWidget {
                 child: const Text('La Langosta Ahumada'),
               ),
             ),
-            const Spacer(), // Add a spacer to push the button to the center
+
+            //Ejercicio 3
+            const Spacer(), 
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CalculadoraViaje()),
+                  );
+                },
+                child: const Text('Calculadora de Viaje'),
+              ),
+            ),
+            const Spacer(), 
           ],
         ),
       ),

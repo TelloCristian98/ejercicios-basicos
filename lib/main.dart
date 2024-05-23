@@ -50,31 +50,31 @@ class MainPage extends StatelessWidget {
             ),
             const Spacer(), 
             Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => InputFormPage()),
-                  );
-                },
-                child: const Text('La Langosta Ahumada'),
-              ),
+              child: Column(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => InputFormPage()),
+                      );
+                    },
+                    child: const Text('La Langosta Ahumada'),
+                  ),
+                  const SizedBox(height: 20), // Space between the buttons
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CalculadoraViaje()),
+                      );
+                    },
+                    child: const Text('Calculadora de Viaje'),
+                  ),
+                ],
+              )
             ),
-
-            //Ejercicio 3
-            const Spacer(), 
-            Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => CalculadoraViaje()),
-                  );
-                },
-                child: const Text('Calculadora de Viaje'),
-              ),
-            ),
-            const Spacer(), 
+            const Spacer(),
           ],
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:ejercicios_basicos/Pages/Exercise2.dart';
 import 'package:flutter/material.dart';
 import 'Pages/InputFormPage.dart';
 import 'Pages/CaculadoraViaje.dart'; // Importa tu clase CalculadoraViaje
@@ -62,6 +63,16 @@ class MainPage extends StatelessWidget {
                     child: const Text('La Langosta Ahumada'),
                   ),
                   const SizedBox(height: 20), // Space between the buttons
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Exercise2()),
+                      );
+                    },
+                    child: const Text('Calculadora de Uva'),
+                  ),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
